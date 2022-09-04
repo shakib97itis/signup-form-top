@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup form</title>
+  </head>
+  <body>
+    <div class="main container">
+      <div class="main__left">
+        <div>
+          <img src="assets/images/odin-lined.png" alt="Odin logo" />
+          <h1 class="primary-heading">ODIN</h1>
+        </div>
+      </div>
+      <div class="main__right">
+        <p class="title">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi
+          laudantium repellat itaque consequuntur dignissimos architecto.
+        </p>
+
+        <form action="#" method="post" class="form">
+          <div class="shadow">
+            <h2 class="form__heading">Let's do it</h2>
+            <div class="form__container">
+              <div>
+                <label for="f-name">First name</label>
+                <input
+                  type="text"
+                  name="f-name"
+                  id="f-name"
+                  required
+                  placeholder=" "
+                />
+              </div>
+              <div>
+                <label for="l-name">First name</label>
+                <input type="text" name="l-name" id="l-name" placeholder=" " />
+              </div>
+              <div>
+                <label for="e-mail">Email</label>
+                <input
+                  type="email"
+                  name="e-mail"
+                  id="e-mail"
+                  required
+                  placeholder=" "
+                />
+                <div class="val-msg">enter a valid email address</div>
+              </div>
+              <div>
+                <label for="p-num">Number</label>
+                <input
+                  type="tel"
+                  name="p-num"
+                  id="p-num"
+                  required
+                  placeholder=" "
+                />
+                <div class="val-msg"></div>
+              </div>
+              <div>
+                <label for="pass">Password</label>
+                <input
+                  type="password"
+                  name="pass"
+                  id="pass"
+                  required
+                  placeholder=" "
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                />
+                <div class="val-msg">Enter a valid password</div>
+              </div>
+              <div>
+                <label for="c-pass">Conform password</label>
+                <input
+                  type="password"
+                  name="pass"
+                  id="pass"
+                  required
+                  placeholder=" "
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                />
+                <div class="val-msg">Enter a valid password</div>
+              </div>
+            </div>
+          </div>
+          <div class="form__button-container">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
